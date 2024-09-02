@@ -2,14 +2,14 @@
   <main>
     <h1 class="title">GarminDB</h1>
     <h2 class="subtitle">Garmin ConnectIQ compatible devices</h2>
-    
+    <p class="p">Select the columns you're interested in or just export the whole table with the button on the bottom of the page</p>
     <data-grid
-        title="Device list"
         :model-value="devices"
         v-model:columns="cols"
         :is-items-per-page-editable="true"
         :is-sortable="true"
         :is-export-enabled="true"
+        :items-per-page="50"
         paging-footer-text="page {0} of {1}"
         items-footer-text="{0} items"
       />
@@ -20,7 +20,6 @@
 
 import DataGrid, { GridSelectionMode } from '@rozzy/vue-datagrid/src/DataGrid.vue';
 import { GridColumnDefinition } from '@rozzy/vue-datagrid/src/GridColumnDefinition';
-// import type { GridRowCommandDefinition } from '@rozzy/vue-datagrid/src/GridCommandDefinition';
 import { DataLoader, Formatter } from '@/bll/data';
 
 export default {
