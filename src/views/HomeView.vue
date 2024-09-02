@@ -2,17 +2,21 @@
   <main>
     <h1 class="title">GarminDB</h1>
     <h2 class="subtitle">Garmin ConnectIQ compatible devices</h2>
-    <p class="p">Select the columns you're interested in or just export the whole table with the button on the bottom of the page</p>
-    <data-grid
-        :model-value="devices"
-        v-model:columns="cols"
-        :is-items-per-page-editable="true"
-        :is-sortable="true"
-        :is-export-enabled="true"
-        :items-per-page="50"
-        paging-footer-text="page {0} of {1}"
-        items-footer-text="{0} items"
-      />
+    <div class="box">
+      <p class="p">Select the columns you're interested in or just export the whole table with the button on the bottom of the page</p>
+      <data-grid
+          :model-value="devices"
+          v-model:columns="cols"
+          :is-items-per-page-editable="true"
+          :is-sortable="true"
+          :is-export-enabled="true"
+          :items-per-page="50"
+          paging-footer-text="page {0} of {1}"
+          items-footer-text="{0} items"
+        />
+
+      <p class="p text-small">If you want to thank me, buy me a coffee <a href="https://revolut.me/mihlywer">here</a></p>
+    </div>
   </main>
 </template>
 
