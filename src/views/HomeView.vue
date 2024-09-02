@@ -9,6 +9,7 @@
         v-model:columns="cols"
         :is-items-per-page-editable="true"
         :is-sortable="true"
+        :is-export-enabled="true"
         paging-footer-text="page {0} of {1}"
         items-footer-text="{0} items"
       />
