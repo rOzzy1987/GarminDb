@@ -15,8 +15,10 @@
           items-footer-text="{0} items"
         />
 
+      <p>&nbsp;</p>
       <p class="p text-small">If you want to thank me, buy me a coffee <a href="https://revolut.me/mihlywer">here</a></p>
     </div>
+    <p>&nbsp;</p>
   </main>
 </template>
 
